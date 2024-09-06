@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vintage Aura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="logo.png" alt="Vintage Aura Logo" class="logo-image">
+                <h1>Vintage Aura</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="home">
+        <div class="home-content">
+            <h2>Who We Are</h2>
+            <p>Welcome to Vintage Aura, where we blend timeless style with modern trends...</p>
+        </div>
+    </section>
+    <section id="shop">
+        <div class="shop-content">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="product-1 (1).jpg" alt="Smack the clown - T-shirt">
+                    <h3>Product 1</h3>
+                    <p>$29.99</p>
+                    <a href="#">View Details</a>
+                </div>
+                <div class="product-item">
+                    <img src="product-1 (2).jpg" alt="War Love - T-shirt">
+                    <h3>Product 2</h3>
+                    <p>$39.99</p>
+                    <a href="#">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>Vintage Aura is committed to delivering high-quality streetwear...</p>
+            <p>If you have any questions or need assistance, feel free to <a href="#contact">contact us</a>.</p>
+        </div>
+        <!-- Contact Section -->
+<section id="contact">
+    <div class="contact-content">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="send-mail.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</section>
+<form id="contact-form" action="https://formspree.io/f/your-form-id" method="post">
+    <!-- Form fields here -->
+</form>
+
+    </section>
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</body>
+</html>
